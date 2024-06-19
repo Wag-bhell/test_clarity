@@ -9,7 +9,7 @@ Feature: Mouse tests feature
     When I double click on the button "buttonDblClick"
     Then The message "DblClick Done" should be displayed
 
-  Scenario: Double click on button until "DblClick Done" is displayed
+  Scenario: Move the mouse to make the message "MouseOver Done" appear
     Given I visit the "ClarityTestPage/ClarityTestPage.html" page
     When I move the mouse to "buttonMouseOver"
     Then The message "MouseOver Done" should be displayed
