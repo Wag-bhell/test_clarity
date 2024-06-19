@@ -1,16 +1,27 @@
-# README - Projet Cypress
+# README - Cypress Project
 
-Ce projet utilise Cypress pour l'automatisation des tests. Voici quelques instructions pour démarrer et exécuter les tests.
+This project uses Cypress for test automation. Here are some instructions to get started and run the tests.
 
-## Prérequis
+## Prerequisites
 
-Assurez-vous d'avoir les versions suivantes installées sur votre système :
-- Node.js : v18.17.0
-- npm : v9.8.1
+Make sure you have the following versions installed on your system:
+- Node.js: v18.17.0
+- npm: v9.8.1
 
 ## Installation
 
-Pour initialiser le projet, exécutez la commande suivante dans votre terminal :
+To initialize the project, run the following command in your terminal:
 
 ```bash
 npm install
+```
+
+## Execution
+
+To run the automated tests, execute the following command in your terminal:
+
+```bash
+npx cypress open
+```
+
+Select "E2E Testing," then choose the browser you want to use, and then use the interface to run the desired scenarios.

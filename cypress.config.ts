@@ -22,8 +22,12 @@ export default defineConfig({
       // Make sure to return the config object as it might have been modified by the plugin.
       return config;
     },
-      baseUrl: "https://testingwithclarity.com/",
-      specPattern: 'cypress/integration/**/*.feature',
-      supportFile:false
+    baseUrl: "https://testingwithclarity.com/",
+    specPattern: 'cypress/integration/**/*.feature',
+    supportFile: "cypress/support/commands.ts",
+    defaultCommandTimeout: 10000,
+    requestTimeout: 10000,
+    responseTimeout: 10000,
+    retries:2
   },
 });

@@ -9,8 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "cypress-cucumber-preprocessor":{
-    "stepDefinitions": ["cypress/integration/**/*.ts"]
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/integration/**/*.ts"
+    ]
   },
   "dependencies": {
     "@types/cypress": "^1.1.3",

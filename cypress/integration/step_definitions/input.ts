@@ -23,8 +23,8 @@ When('I type {string} in the input field {string}', (text: string, id: string) =
     cy.get('#' + id).type(text);
 })
 
-Then('The other inputs should have the value {string}', (inputValue: string) => {
-    cy.get('#InputTextObjects').first().get('input[name="inputText"]').each((input: JQuery<HTMLElement>) => {
+Then('The inputs should have the value {string}', (inputValue: string) => {
+    cy.get('#InputTextObjects').first().find('input[name="inputText"]').each((input: JQuery<HTMLInputElement>) => {
         cy.wrap(input).should('have.value', inputValue)
     })
 })
